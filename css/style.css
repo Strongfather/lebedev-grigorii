@@ -74,6 +74,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -316,6 +317,10 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+.block {
+  -webkit-animation: show 2s ease delay infinite;
+  animation: show 2s ease delay infinite; }
+
 .header {
   padding: 24px 0px;
   background-color: #131313; }
@@ -341,6 +346,10 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  background: url("../img/hero-bg.jpg") no-repeat;
+  height: 100vh; }
+
 body {
-  font-family: sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
