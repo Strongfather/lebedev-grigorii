@@ -400,7 +400,8 @@ template {
     color: #fff;
     text-decoration: none; }
   .hero__content {
-    max-width: 670px; }
+    max-width: 670px;
+    padding-left: 50px; }
   .hero__text {
     font-size: 22px;
     max-width: 504px; }
