@@ -6,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: wrap;
+<<<<<<< HEAD
 }
 @font-face {
     font-family: 'Futura Demi';
@@ -16,3 +17,15 @@
     font-style: normal;
     font-display: wrap;
 }    
+=======
+    }
+    @font-face {
+        font-family: 'Futura Demi';
+        src: 
+        url('../fonts/futura/FuturaDemiC.woff') format('woff'),
+        url('../fonts/futura/FuturaDemiC.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: wrap;
+        }
+>>>>>>> cb6c04e7ec3d3690058abdc928bd370c41634375

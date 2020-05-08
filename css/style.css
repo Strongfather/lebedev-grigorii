@@ -371,6 +371,7 @@ template {
   margin-right: 45px; }
 
 .hero {
+<<<<<<< HEAD
   position: relative;
   display: flex;
   flex-direction: column;
@@ -429,6 +430,10 @@ template {
 
 *, *:before, *:after {
   box-sizing: border-box; }
+=======
+  background: url("../img/hero-bg.jpg") no-repeat;
+  height: 100vh; }
+>>>>>>> cb6c04e7ec3d3690058abdc928bd370c41634375
 
 body {
   font-family: 'Futura Book', sans-serif;
