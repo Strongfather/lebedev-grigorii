@@ -336,8 +336,13 @@ template {
   animation: show 2s ease delay infinite; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   padding: 24px 0px;
-  background-color: #131313; }
+  background-color: #131313;
+  z-index: 99; }
 
 .menu {
   display: flex;
@@ -362,6 +367,7 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
   height: 100vh; }
   .hero__instagram {
