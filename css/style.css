@@ -358,6 +358,9 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__logo:hover {
+    outline: dotted #E3B873;
+    transition: color 0.2s; }
 
 .logo {
   color: #E3B873;
@@ -374,6 +377,9 @@ template {
 
 .phone {
   color: #E3B873; }
+  .phone:hover {
+    color: #fff;
+    transition: color 0.2s; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -417,6 +423,9 @@ a {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none; }
+    .hero__scroll-down:hover {
+      color: #E3B873;
+      transition: color 0.2s; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -447,6 +456,9 @@ a {
     text-decoration: none;
     transform: rotate(90deg);
     line-height: 0.8; }
+    .instagram__link:hover {
+      color: #fff;
+      ransition: color 0.2s; }
     .instagram__link::after {
       content: '';
       width: 50px;

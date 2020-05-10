@@ -11,9 +11,13 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &__logo
+       &:hover
+          outline: dotted $primary
+          transition: color 0.2s
 .logo
     color: $primary
-    text-transform: uppercase
+    text-transform: uppercase  
 .nav
     &__item
         text-decoration: none
@@ -25,6 +29,9 @@
           transition: color 0.2s
 .phone
     color: $primary
+    &:hover
+      color: $light
+      transition: color 0.2s
 .contacts
     &__phone
         margin-right: 45px
