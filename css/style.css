@@ -323,16 +323,21 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
-    color: #fff; }
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.3s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
 
 .container {
-  width: 85%;
   max-width: 1256px;
   margin: auto; }
 
@@ -363,6 +368,9 @@ template {
   color: #fff;
   text-transform: uppercase;
   margin-right: 40px; }
+  .nav__item:hover {
+    color: #E3B873;
+    transition: color 0.2s; }
 
 .phone {
   color: #E3B873; }
@@ -370,8 +378,11 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+a {
+  text-decoration: none;
+  color: #E3B873; }
+
 .hero {
-<<<<<<< HEAD
   position: relative;
   display: flex;
   flex-direction: column;
@@ -381,6 +392,12 @@ template {
   background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
   height: 100vh;
   color: #fff; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__instagram {
     position: absolute;
     max-width: 80px;
@@ -400,9 +417,17 @@ template {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../img/arrow-down.svg") no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
   .hero__content {
     max-width: 670px;
-    padding-left: 50px; }
+    position: relative; }
   .hero__text {
     font-size: 22px;
     max-width: 504px; }
@@ -415,10 +440,19 @@ template {
   justify-content: center;
   align-items: center; }
   .instagram__link {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    line-height: 0.8; }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
@@ -430,10 +464,6 @@ template {
 
 *, *:before, *:after {
   box-sizing: border-box; }
-=======
-  background: url("../img/hero-bg.jpg") no-repeat;
-  height: 100vh; }
->>>>>>> cb6c04e7ec3d3690058abdc928bd370c41634375
 
 body {
   font-family: 'Futura Book', sans-serif;

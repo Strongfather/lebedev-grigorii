@@ -18,11 +18,7 @@ function bs() {
 };
 
 function serveSass() {
-<<<<<<< HEAD
     return src("./sass/**/*.sass","./sass/**/*.scss")
-=======
-    return src("./sass/**/*.sass", "./scss/**/*.scss")
->>>>>>> cb6c04e7ec3d3690058abdc928bd370c41634375
         .pipe(sass())
         .pipe(autoprefixer({
             cascade: false
