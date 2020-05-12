@@ -562,6 +562,19 @@ a {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
+.projects__subtitle {
+  display: flex;
+  max-width: 55rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  text-transform: lowercase; }
+
+.projects__text {
+  font-family: FuturaBookC, sans-serif;
+  color: #363636;
+  line-height: 1.6rem;
+  font-size: 1.2rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -581,7 +594,9 @@ a {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .projects__card {
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
