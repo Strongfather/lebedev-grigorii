@@ -417,6 +417,9 @@ img {
 .contacts__phone {
   margin-right: 45px; }
 
+.contacts__button {
+  padding: 0.9rem 1.7rem; }
+
 a {
   text-decoration: none;
   color: #E3B873; }
@@ -457,7 +460,9 @@ a {
     background-color: #131313;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Yeseva One', cursive;
+    font-size: 12px; }
     .hero__scroll-down:hover {
       color: #E3B873;
       transition: color 0.2s; }
@@ -468,13 +473,14 @@ a {
       height: 30px;
       border: 1px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 1rem; }
   .hero__content {
     max-width: 47.85rem;
     position: relative;
     margin-left: 4.28rem; }
   .hero__title {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    line-height: 1.4; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 504px;
@@ -579,7 +585,9 @@ a {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .logo {
+    margin-left: 5rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
