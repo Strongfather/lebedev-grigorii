@@ -564,7 +564,8 @@ a {
     color: #E3B873; }
 
 .types__section-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 0.95rem; }
 
 .row {
   display: flex;
@@ -606,20 +607,28 @@ a {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1.214rem 4.5rem;
+  text-align: left; }
+
+.projects__section-title {
+  font-size: 0.95rem; }
 
 .projects__subtitle {
   display: flex;
   max-width: 55rem;
   margin: auto;
-  margin-bottom: 3rem;
-  text-transform: lowercase; }
+  margin-bottom: 3rem; }
 
 .projects__text {
   font-family: FuturaBookC, sans-serif;
   color: #363636;
-  line-height: 1.6rem;
-  font-size: 1.2rem; }
+  line-height: 2.1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 1.6rem; }
+
+.projects__card__pricetag {
+  padding: 1.214rem 3.9rem; }
 
 .modal {
   opacity: 0;
@@ -687,6 +696,10 @@ a {
   .hero__instagram {
     display: none; } }
 
+@media screen and (max-width: 870px) {
+  .row {
+    flex-direction: column; } }
+
 @media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
@@ -731,3 +744,15 @@ a {
     margin-top: 0.6rem; }
     .menu__contacts {
       margin-right: -0.3rem; } }
+
+@media screen and (max-width: 570px) {
+  .types__section-title {
+    font-size: 1.2rem; }
+  .card__pricetag {
+    padding: 1.014rem 2.5rem;
+    margin-left: 0;
+    bottom: 0; } }
+
+@media screen and (max-width: 570px) {
+  .section {
+    padding: 0 6px; } }
