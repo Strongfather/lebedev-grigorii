@@ -15,6 +15,8 @@
 @media screen and ( max-width: 870px )
   .row
     flex-direction: column
+    justify-content: center
+    align-items: center
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -67,6 +69,8 @@
     &__section-title
       font-size: 1.2rem
   .card
+    &__title
+      color: black
     &__pricetag
       padding: 1.014rem 2.5rem
       margin-left: 0
@@ -74,3 +78,29 @@
 @media screen and ( max-width: 570px )
   .section
     padding: 0 6px
+@media screen and ( max-width: 570px )
+  .projects
+    background-color: $dark
+    color: $light
+    &__text
+      color: $light
+      font-size: 1rem
+      line-height: 1.8rem
+      margin-left: 0
+      padding: 0.5rem 1rem
+      font-style: normal
+      font-weight: normal
+    &__subtitle
+      max-width: 28rem
+      margin-bottom: 1.4rem
+    &__section
+      &-title
+       font-size: 1.2rem
+       padding-top: 3rem
+    &__card
+      &__pricetag
+        padding: 1.014rem 3.9rem
+        margin-left: 0
+        bottom: 0
+        margin-bottom: -1.6rem
+     
