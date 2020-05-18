@@ -7,6 +7,12 @@ $(document).ready(function () {
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.classList.toggle('modal--visible');
+    }
+  };
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   })
@@ -29,7 +35,5 @@ $(document).ready(function () {
 
   next.css('left', prev.width() + 10 + bullets.width() + 10)
   bullets.css('left',prev.width() + 10)
-
-
 
 });

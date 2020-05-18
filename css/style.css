@@ -609,9 +609,8 @@ a {
   .title--primary {
     color: #E3B873; }
 
-.types__section-titledd {
-  margin-bottom: 2rem;
-  font-size: 0.95rem; }
+.types__section-title {
+  margin-bottom: 2rem; }
 
 .card__text {
   position: relative;
@@ -635,7 +634,7 @@ a {
   font-size: 1.07em;
   line-height: 1.79rem;
   color: #959595;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 4rem; }
 
 .card__pricetag {
   position: absolute;
@@ -764,7 +763,7 @@ a {
   width: auto;
   bottom: -2px; }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .menu__logo {
     margin: auto; } }
 
@@ -778,7 +777,7 @@ a {
   .nav {
     display: none; }
   .logo {
-    margin: auto; }
+    margin: 0 2rem; }
   .hero__instagram {
     display: none; } }
 
@@ -808,6 +807,8 @@ a {
     display: none; }
   .title {
     font-size: 1.9rem; }
+  .hero__title {
+    margin-top: 4.4rem; }
   .hero__content {
     margin: 0 1.3rem;
     height: 31.4rem;
@@ -817,7 +818,8 @@ a {
   .hero__text {
     font-size: 1.52rem;
     margin-top: 1rem;
-    margin-bottom: 4.7rem; }
+    margin-bottom: 4.7rem;
+    line-height: 2rem; }
   .hero__button {
     display: block;
     width: 100%; } }
@@ -837,8 +839,12 @@ a {
 @media screen and (max-width: 570px) {
   .types__section-title {
     font-size: 1.2rem; }
+  .types__section-title__image {
+    margin-bottom: 2.7rem; }
   .card__title {
     color: black; }
+  .card__text {
+    margin-top: -13rem; }
   .card__pricetag {
     padding: 1.014rem 2.5rem;
     margin-left: 0;
@@ -869,8 +875,7 @@ a {
     .projects__card__pricetag {
       padding: 1.014rem 3.9rem;
       margin-left: 0;
-      bottom: 0;
-      margin-bottom: -1.6rem; } }
+      bottom: 0; } }
 
 @media screen and (max-width: 570px) and (max-width: 570px) {
   .button {
