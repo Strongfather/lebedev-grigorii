@@ -731,15 +731,22 @@ a {
   .swiper-slide__text {
     flex-basis: 34%;
     margin-top: -0.5rem; }
+    .swiper-slide__text--term {
+      padding-top: 0.9rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     color: #E3B873;
     text-transform: uppercase;
-    margin-top: 2.6rem; }
+    margin-top: 2.6rem;
+    margin-bottom: 0; }
   .swiper-slide__value {
-    display: block; }
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 1.1rem; }
+    .swiper-slide__value--month {
+      padding-bottom: 7.3rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -760,11 +767,16 @@ a {
   background: url("../img/arrow-prev.svg") no-repeat center; }
 
 .swiper-button-next {
-  background: url("../img/arrow-next.svg") no-repeat center; }
+  background: url("../img/arrow-next.svg") no-repeat center;
+  padding-left: 150px; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
-  bottom: -2px; }
+  bottom: -2px;
+  margin: 0 10px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px; }
 
 @media screen and (max-width: 1400px) {
   .menu__logo {
@@ -773,6 +785,10 @@ a {
 @media screen and (max-width: 1300px) {
   .menu {
     padding-right: 2rem; } }
+
+@media screen and (max-width: 1300px) {
+  .draft__row {
+    padding: 0 4rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -816,8 +832,6 @@ a {
     display: none; }
   .title {
     font-size: 1.9rem; }
-  .hero__content {
-    padding: 0; }
   .hero__title {
     margin-top: 4.4rem; }
   .hero__content {
@@ -888,7 +902,7 @@ a {
       margin-left: 0;
       bottom: 0; } }
 
-@media screen and (max-width: 570px) and (max-width: 570px) {
+@media screen and (max-width: 570px) {
   .button {
     font-weight: 500;
     font-size: 1.1rem;
@@ -897,3 +911,7 @@ a {
       margin-top: -1.6rem; }
     .button--outline {
       margin-top: 2rem; } }
+
+@media screen and (max-width: 570px) {
+  .draft__row {
+    padding: 0 1rem; } }
