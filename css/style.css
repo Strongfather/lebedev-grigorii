@@ -550,7 +550,9 @@ a {
     text-decoration: none;
     font-family: 'Yeseva One', cursive;
     font-size: 12px;
-    z-index: 3; }
+    z-index: 3;
+    font-style: normal;
+    font-weight: normal; }
     .hero__scroll-down:hover {
       color: #E3B873;
       transition: color 0.2s; }
@@ -825,7 +827,7 @@ a {
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
-    margin-right: 2rem;
+    margin-right: 0.5rem;
     color: #fff;
     text-decoration: none; }
   .contacts__button {
@@ -912,6 +914,6 @@ a {
     .button--outline {
       margin-top: 2rem; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 5700px) {
   .draft__row {
     padding: 0 1rem; } }
