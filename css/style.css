@@ -955,7 +955,8 @@ a {
 @media screen and (max-width: 570px) {
   .col-60 {
     width: 100%;
-    padding-top: 2.8rem; }
+    padding-top: 2.8rem;
+    padding-left: 0; }
   .col-40 {
     width: 100%; } }
 
@@ -982,6 +983,17 @@ a {
   .swiper-slide__text--area {
     padding-left: 3.6rem; }
   .swiper-slide__text--price {
-    padding-left: 3.6rem; }
+    padding-left: 1.6rem; }
+  .swiper-slide__end__text--price {
+    padding-left: 3.4rem;
+    padding-top: 0.8rem; }
   .swiper-button-next {
     padding-left: 80px; } }
+
+@media screen and (max-width: 375px) {
+  .swiper-slide--price {
+    padding-left: 0; } }
+
+@media screen and (max-width: 320px) {
+  .swiper-slide--price {
+    padding-left: 0rem; } }
