@@ -397,8 +397,16 @@ template {
   flex-basis: 30%;
   margin: 0 1%; }
 
+.col-40 {
+  width: 40%; }
+
 .col-50 {
   width: 50%; }
+
+.col-60 {
+  width: 60%;
+  padding-left: 4.7rem;
+  padding-top: 1.4rem; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -416,7 +424,7 @@ img {
 .section {
   padding: 60px 0; }
   .section--dark {
-    background: #131313 url(../img/bg-lines.svg) no-repeat center;
+    background: #131313;
     color: #fff; }
   .section-title {
     text-align: center; }
@@ -735,6 +743,11 @@ a {
     margin-top: -0.5rem; }
     .swiper-slide__text--term {
       padding-top: 0.9rem; }
+    .swiper-slide__text--area {
+      padding-left: 1.8rem; }
+    .swiper-slide__text--price {
+      padding-left: 1.8rem;
+      padding-top: 0.8rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -813,6 +826,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
+
+@media screen and (max-width: 870px) {
+  .col-60 {
+    width: 100%;
+    padding-top: 2.8rem;
+    left: 0; }
+  .col-40 {
+    width: 100%;
+    padding: 0 2rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -923,6 +945,43 @@ a {
     .button--outline {
       margin-top: 2rem; } }
 
-@media screen and (max-width: 5700px) {
-  .draft__row {
-    padding: 0 1rem; } }
+@media screen and (max-width: 570px) {
+  .draft {
+    font-style: normal;
+    font-weight: normal; }
+    .draft__row {
+      padding: 0 1rem; } }
+
+@media screen and (max-width: 570px) {
+  .col-60 {
+    width: 100%;
+    padding-top: 2.8rem; }
+  .col-40 {
+    width: 100%; } }
+
+@media screen and (max-width: 570px) {
+  .section-title__text {
+    max-width: 26rem;
+    font-size: 1.2rem;
+    line-height: 1.97rem; }
+  .section-title__word::after {
+    background-color: #131313; }
+  .section-title__heading--primary {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem; } }
+
+@media screen and (max-width: 570px) {
+  .swiper-slide__heading {
+    font-size: 1.185rem; }
+  .swiper-slide__value {
+    font-size: 1.2rem; }
+    .swiper-slide__value--month {
+      padding-bottom: 4.8rem; }
+  .swiper-slide__text--area {
+    padding-left: 3.6rem; }
+  .swiper-slide__text--price {
+    padding-left: 3.6rem; }
+  .swiper-button-next {
+    padding-left: 80px; } }

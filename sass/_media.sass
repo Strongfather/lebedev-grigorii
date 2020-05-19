@@ -30,6 +30,15 @@
     flex-direction: column
     justify-content: center
     align-items: center
+@media screen and ( max-width: 870px )
+  .col
+    &-60
+      width: 100%
+      padding-top: 2.8rem
+      left: 0
+    &-40 
+      width: 100%
+      padding: 0 2rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -144,8 +153,51 @@
       margin-top: -1.6rem
     &--outline
       margin-top: 2rem
-@media screen and ( max-width: 5700px )
+@media screen and ( max-width: 570px )
   .draft
+    font-style: normal
+    font-weight: normal
     &__row
       padding: 0 1rem
-  
+@media screen and ( max-width: 570px )
+  .col
+    &-60
+      width: 100%
+      padding-top: 2.8rem
+    &-40 
+      width: 100%
+@media screen and ( max-width: 570px )
+ .section
+    &-title
+      &__text
+        max-width: 26rem
+        font-size: 1.2rem
+        line-height: 1.97rem
+      &__word
+        &::after
+          background-color: $dark
+      &__heading
+        &--primary
+          font-size: 1.7rem
+          font-style: normal
+          font-weight: normal
+          line-height: 2.5rem
+@media screen and ( max-width: 570px )
+  .swiper
+    &-slide
+      &__heading
+        font-size: 1.185rem
+      &__value
+        font-size: 1.2rem
+        &--month
+          padding-bottom: 4.8rem
+      &__text
+        &--area
+          padding-left: 3.6rem
+        &--price
+          padding-left: 3.6rem
+    &-button
+      &-next
+        padding-left: 80px
+
+
