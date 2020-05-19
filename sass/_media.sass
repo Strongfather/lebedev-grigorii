@@ -42,6 +42,11 @@
   .projects
     &__card
       margin-bottom: 5rem
+@media screen and ( max-width: 670px )
+  .projects
+    &__text
+      margin: auto
+      padding: 0 1rem
 
 @media screen and ( max-width: 570px )
   .contacts
@@ -99,6 +104,8 @@
       padding: 1.014rem 2.5rem
       margin-left: 0
       bottom: 0
+    &__list
+      margin-bottom: 4rem
 @media screen and ( max-width: 570px )
   .section
     padding: 0 6px
@@ -108,12 +115,12 @@
     color: $light
     &__text
       color: $light
-      font-size: 1rem
+      font-size: 1.1rem
       line-height: 1.8rem
       margin-left: 0
-      padding: 0.5rem 1rem
       font-style: normal
       font-weight: normal
+      margin-top: 1.3rem
     &__subtitle
       max-width: 28rem
       margin-bottom: 1.4rem
@@ -126,6 +133,8 @@
         padding: 1.014rem 3.9rem
         margin-left: 0
         bottom: 0
+    &__row
+      padding-top: 1.3rem
 @media screen and ( max-width: 570px )
   .button
     font-weight: 500

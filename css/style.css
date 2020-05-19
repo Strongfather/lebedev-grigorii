@@ -641,7 +641,7 @@ a {
   font-size: 1.07em;
   line-height: 1.79rem;
   color: #959595;
-  margin-bottom: 4rem; }
+  margin-bottom: 2.5rem; }
 
 .card__pricetag {
   position: absolute;
@@ -673,7 +673,7 @@ a {
   margin-left: 1.6rem; }
 
 .projects__card__pricetag {
-  padding: 1.214rem 3.9rem; }
+  padding: 1.214rem 6.2rem 1.214rem 2rem; }
 
 .modal {
   opacity: 0;
@@ -825,6 +825,11 @@ a {
   .projects__card {
     margin-bottom: 5rem; } }
 
+@media screen and (max-width: 670px) {
+  .projects__text {
+    margin: auto;
+    padding: 0 1rem; } }
+
 @media screen and (max-width: 570px) {
   .contacts__phone {
     margin-right: 0.5rem;
@@ -875,7 +880,9 @@ a {
   .card__pricetag {
     padding: 1.014rem 2.5rem;
     margin-left: 0;
-    bottom: 0; } }
+    bottom: 0; }
+  .card__list {
+    margin-bottom: 4rem; } }
 
 @media screen and (max-width: 570px) {
   .section {
@@ -887,12 +894,12 @@ a {
     color: #fff; }
     .projects__text {
       color: #fff;
-      font-size: 1rem;
+      font-size: 1.1rem;
       line-height: 1.8rem;
       margin-left: 0;
-      padding: 0.5rem 1rem;
       font-style: normal;
-      font-weight: normal; }
+      font-weight: normal;
+      margin-top: 1.3rem; }
     .projects__subtitle {
       max-width: 28rem;
       margin-bottom: 1.4rem; }
@@ -902,7 +909,9 @@ a {
     .projects__card__pricetag {
       padding: 1.014rem 3.9rem;
       margin-left: 0;
-      bottom: 0; } }
+      bottom: 0; }
+    .projects__row {
+      padding-top: 1.3rem; } }
 
 @media screen and (max-width: 570px) {
   .button {
