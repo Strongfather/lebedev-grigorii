@@ -56,7 +56,6 @@
     &__text
       margin: auto
       padding: 0 1rem
-
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -155,7 +154,45 @@
     &--outline
       margin-top: 2rem
 @media screen and ( max-width: 570px )
+  .control
+    background: $dark
+    color: $light
+    &__section
+      &-title
+        margin-top: -27rem
+        &__heading
+          font-size: 1.8rem
+    &__form
+      flex-direction: column
+    &__text
+      font-size: 1.2rem
+      line-height: 2.12rem
+      margin-bottom: 2rem
+      &::before
+        margin-bottom: 1.3rem
+    &__button
+      &--primary
+        order: 5
+    &__form
+      padding: 0 1rem
+    &__label
+      font-size: 1.3rem
+    &__input
+      font-size: 1.5rem
+      &-group
+        &--up
+          margin-bottom: 4.5rem
+    &__policy
+        margin-bottom: 6.2rem
+        margin-top: 0.6rem
+        margin-left: -6.8rem
+        font-size: 1.3rem
+  .video
+    max-width: 90%
+   
+@media screen and ( max-width: 570px )
   .draft
+    padding-bottom: 30rem
     font-style: normal
     font-weight: normal
     &__row

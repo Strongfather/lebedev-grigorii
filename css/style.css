@@ -351,6 +351,8 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
+  .input-group--down {
+    margin-top: 4.5rem; }
   .input--light::-webkit-input-placeholder {
     color: #fff; }
   .input--light::-moz-placeholder {
@@ -679,10 +681,14 @@ a {
   margin-bottom: -7px; }
 
 .control__button {
-  padding: 1.2857rem 4.785rem; }
+  padding: 1.2857rem 4.385rem;
+  font-size: 1.1rem; }
 
 .control__policy {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  margin-top: 1.3rem;
+  margin-left: -3.1rem;
+  font-size: 1.1rem; }
   .control__policy-label {
     justify-content: center; }
 
@@ -1018,7 +1024,42 @@ a {
       margin-top: 2rem; } }
 
 @media screen and (max-width: 570px) {
+  .control {
+    background: #131313;
+    color: #fff; }
+    .control__section-title {
+      margin-top: -27rem; }
+      .control__section-title__heading {
+        font-size: 1.8rem; }
+    .control__form {
+      flex-direction: column; }
+    .control__text {
+      font-size: 1.2rem;
+      line-height: 2.12rem;
+      margin-bottom: 2rem; }
+      .control__text::before {
+        margin-bottom: 1.3rem; }
+    .control__button--primary {
+      order: 5; }
+    .control__form {
+      padding: 0 1rem; }
+    .control__label {
+      font-size: 1.3rem; }
+    .control__input {
+      font-size: 1.5rem; }
+      .control__input-group--up {
+        margin-bottom: 4.5rem; }
+    .control__policy {
+      margin-bottom: 6.2rem;
+      margin-top: 0.6rem;
+      margin-left: -6.8rem;
+      font-size: 1.3rem; }
+  .video {
+    max-width: 90%; } }
+
+@media screen and (max-width: 570px) {
   .draft {
+    padding-bottom: 30rem;
     font-style: normal;
     font-weight: normal; }
     .draft__row {
