@@ -48,6 +48,13 @@ $(document).ready(function () {
         required: true,
         email: true
       }
+    },
+    messages: {
+      userName: "Имя обязательно",
+      email: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }
     }
   })
 
