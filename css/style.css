@@ -804,6 +804,9 @@ a {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
 
 .modal {
   opacity: 0;
