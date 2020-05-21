@@ -36,13 +36,17 @@ $(document).ready(function () {
   next.css('left', prev.width() + 10 + bullets.width() + 10)
   bullets.css('left',prev.width() + 10)
 
-  new WOW().init();
-
   // Валидация формы
   $('.modal__form').validate({
+    errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
-      userName: "required",
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
       // compound rule
       userEmail: {
         required: true,
@@ -50,12 +54,21 @@ $(document).ready(function () {
       }
     },
     messages: {
-      userName: "Имя обязательно",
-      email: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати букв"
+
+      },
+      userPhone: "Заполните поле",
+       userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
       }
     }
   })
+
+// маска для телефона
+  $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"});
 
 });

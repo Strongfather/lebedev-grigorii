@@ -384,6 +384,9 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+input.invalid {
+  border: 1px solid tomato; }
+
 .container {
   max-width: 1256px;
   margin: auto; }
@@ -677,7 +680,8 @@ a {
 .control__input {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  color: rgba(54, 54, 54, 0.3); }
 
 .control__label {
   margin-bottom: -7px; }
