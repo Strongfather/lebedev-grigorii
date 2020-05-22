@@ -39,6 +39,7 @@ $(document).ready(function () {
   // Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -46,11 +47,17 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
       // compound rule
       userEmail: {
         required: true,
         email: true
+      },
+      modalPolicyCheckbox: {
+        required: true,
       }
     },
     messages: {
@@ -64,11 +71,103 @@ $(document).ready(function () {
        userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
+      }, 
+      modalPolicyCheckbox: {
+        required: "Заполните поле"
+      },
+    }
+  })
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+      // compound rule
+      controlPolicyCheckbox: {
+        required: true,
       }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати букв"
+
+      },
+      userPhone: "Заполните поле",
+       userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      controlPolicyCheckbox: "Заполните поле"
+    }
+  })
+
+   // Валидация формы
+   $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+      // compound rule
+      userQuestion: {
+        required: true,
+      },
+      footerPolicyCheckbox: {
+        required: true,
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати букв"
+
+      },
+      userPhone: "Заполните поле",
+       userQuestion: {
+        required: "Заполните поле",
+      },
+      footerPolicyCheckbox:"Заполните поле"
     }
   })
 
 // маска для телефона
   $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"});
+
+// создание карты
+ymaps.ready(init);
+function init(){
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [55.76, 37.64],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 7
+    });
+}
 
 });

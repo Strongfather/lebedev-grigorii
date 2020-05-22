@@ -385,7 +385,12 @@ template {
     justify-content: center; }
 
 input.invalid {
-  border: 1px solid tomato; }
+  border-bottom: 1px solid tomato; }
+
+.invalid {
+  color: tomato;
+  display: flex;
+  justify-content: center; }
 
 .container {
   max-width: 1256px;
@@ -813,7 +818,8 @@ a {
     padding: 4.285rem 0; }
   .footer__map {
     margin-bottom: 2rem;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    min-height: 465px; }
   .footer-content {
     display: flex;
     align-items: center;
