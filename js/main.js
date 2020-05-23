@@ -65,7 +65,6 @@ $(document).ready(function () {
         required: "Заполните поле",
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее пятнадцати букв"
-
       },
       userPhone: "Заполните поле",
        userEmail: {
@@ -74,8 +73,21 @@ $(document).ready(function () {
       }, 
       modalPolicyCheckbox: {
         required: "Заполните поле"
-      },
-    }
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
+     }
   })
 
   $('.control__form').validate({
@@ -110,7 +122,20 @@ $(document).ready(function () {
         email: "Введите корректный email"
       },
       controlPolicyCheckbox: "Заполните поле"
-    }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('ссылка на трансляцию')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
+     }
   })
 
    // Валидация формы
@@ -148,7 +173,20 @@ $(document).ready(function () {
         required: "Заполните поле",
       },
       footerPolicyCheckbox:"Заполните поле"
-    }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('ссылка на трансляцию')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
+     }
   })
 
 // маска для телефона
